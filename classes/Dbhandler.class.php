@@ -13,10 +13,10 @@ class Dbhandler {
 
   private function connect() {
     // default XAMPP credentials 
-    $this->host = "127.0.0.1";
-    $this->user = "root";
-    $this->pass = "";
-    $this->db = "ogtech";
+  $this->host = "your-rds-endpoint.amazonaws.com";
+$this->user = "admin";
+$this->pass = "22arid5122";
+$this->db   = "ogtech";
 
     // connect to db
     $this->conn = new mysqli($this->host, $this->user, $this->pass, $this->db);
